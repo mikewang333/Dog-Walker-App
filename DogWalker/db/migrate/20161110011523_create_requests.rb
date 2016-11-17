@@ -6,6 +6,7 @@ class CreateRequests < ActiveRecord::Migration[5.0]
       t.integer :begintime
       t.integer :endtime
       t.string :date
+      t.integer :user_id
 
       t.timestamps
     end
