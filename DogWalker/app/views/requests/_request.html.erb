@@ -1,0 +1,3 @@
+<td><%= link_to request.name, request %></td>
+<td><%= link_to request.email, request %></td>
+<%= button_to "Delete", delete_path(id: request.id, tid: @user.id), :class => "button medium", :method => :delete %>
