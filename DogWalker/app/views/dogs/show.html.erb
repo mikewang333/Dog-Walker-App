@@ -1,1 +1,6 @@
-show.html.erb
+<h3>Dogs</h3>
+<% Dog.all.each do |dog| %>
+	<p>Name: <%= dog.name %></p>
+	<p>Age: <%= dog.age %></p>
+	<p>Breed: <%= dog.breed %></p>
+<% end %>

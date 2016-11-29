@@ -11,4 +11,5 @@ Rails.application.routes.draw do
  	get '/requests', to: 'requests#index', as: 'requests'
  	get '/profile', to: 'users#profile', as: 'profile'
   	resources :requests
+  	resources :dogs
 end
