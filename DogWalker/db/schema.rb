@@ -43,9 +43,9 @@ ActiveRecord::Schema.define(version: 20161129062444) do
     t.integer  "begintime"
     t.integer  "endtime"
     t.string   "date"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "user_id"
     t.string   "email"
   end
 
