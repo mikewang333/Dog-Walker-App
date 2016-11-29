@@ -5,7 +5,7 @@ class RequestsController < ApplicationController
 
 	def index
 		@requests = Request.all
-		render 'new'
+		render 'show'
 	end
 	def create
 		@r = Request.new request_params
