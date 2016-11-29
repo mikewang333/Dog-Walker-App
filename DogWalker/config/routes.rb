@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   	get '/new', to: "requests#new", as: 'new'
  	delete '/delete', to: "requests#delete", as: 'delete'
  	get 'show', to: "requests#show"
- 	get '/requests', to: 'requests#index'
+ 	get '/requests', to: 'requests#index', as: 'requests'
+ 	get '/profile', to: 'users#profile', as: 'profile'
   	resources :requests
 end

@@ -17,7 +17,7 @@
 
 body {
 	font-family: 'Noto Sans', sans-serif;
-	margin: 30px 30px 30px 30px;
+	margin: 0px 0px 0px 0px;
 }
 
 ul {
@@ -34,4 +34,8 @@ li {
 
 .top-bar {
 	text-align: right;
+}
+
+.page-body {
+	margin: 30px;
 }
