@@ -9,6 +9,9 @@ class RequestsController < ApplicationController
 	end
 	def create
 		@r = Request.new request_params
+		if user_signed_in?
+			@r.user = current_user
+		end
 		if @r.save
 			redirect_to @r
 		else

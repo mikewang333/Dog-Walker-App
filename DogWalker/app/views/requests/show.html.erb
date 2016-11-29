@@ -4,8 +4,15 @@
     <div class="column">
       <table class="table">
         <tbody>
+          <th>Name</th>
+          <th>Dog Name</th>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Date </th>
+          <th>Delete? </th>
           <% @requests.each do |request| %>
             <tr>
+
               <%= render request %>
             </tr>
           <% end %>

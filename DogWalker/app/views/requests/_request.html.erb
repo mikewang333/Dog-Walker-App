@@ -1,7 +1,13 @@
+<tr>
 <td><%= link_to request.name, request %></td>
 <td><%= link_to request.dogname, request %></td>
 <td><%= link_to request.begintime, request %></td>
 <td><%= link_to request.endtime, request %></td>
 <td><%= link_to request.date, request %></td>
 
-<%= button_to "Delete", delete_path(id: request.id), :class => "button medium", :method => :delete %>
+<% if user_signed_in? %>
+	<% if request.user == current_user %>
+		<td><%= button_to "Delete", delete_path(id: request.id), :class => "button medium", :method => :delete %></td>
+	<% end %>
+<% end %>
+</tr>
