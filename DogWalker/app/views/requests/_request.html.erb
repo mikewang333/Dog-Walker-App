@@ -1,3 +1,7 @@
 <td><%= link_to request.name, request %></td>
-<td><%= link_to request.email, request %></td>
-<%= button_to "Delete", delete_path(id: request.id, tid: @user.id), :class => "button medium", :method => :delete %>
+<td><%= link_to request.dogname, request %></td>
+<td><%= link_to request.begintime, request %></td>
+<td><%= link_to request.endtime, request %></td>
+<td><%= link_to request.date, request %></td>
+
+<%= button_to "Delete", delete_path(id: request.id), :class => "button medium", :method => :delete %>

@@ -24,11 +24,11 @@ class RequestsController < ApplicationController
 	end
 
 	def show
-		@requests = Requests.all
+		@requests = Request.all
 	end
 
 	private
 	def request_params 
-		params.require(:request).permit(:name, :dogname, :begintime, :endtime, :date)
+		params.require(:request).permit(:name, :dogname, :email, :begintime, :endtime, :date)
 	end
 end
