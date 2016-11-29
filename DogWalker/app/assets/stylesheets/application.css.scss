@@ -19,3 +19,19 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 	margin: 30px 30px 30px 30px;
 }
+
+ul {
+	height: 40px;
+	background-color: #0b95e5;
+	list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+}
+li {
+	display: inline;
+	padding: 20px;
+}
+
+.top-bar {
+	text-align: right;
+}
