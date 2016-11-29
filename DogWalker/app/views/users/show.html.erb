@@ -2,4 +2,8 @@
 	<h1><%= @user.name %>'s Page </h1>
 	<p>Age: <%= @user.age %></p>
 	<p>Location: <%= @user.location %> </p>
+	<p><%= link_to 'Make a Profile for Your Dog!', new_dog_path, :method=>'get' %><p>
+	<% current_user.dogs.each do |dog| %>
+		<p><%= link_to dog.name, dog_path(dog.id), :method => 'get' %></p> 
+	<% end %>
 </div>

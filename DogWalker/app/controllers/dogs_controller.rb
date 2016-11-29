@@ -8,15 +8,20 @@ class DogsController < ApplicationController
         @dog.user_id = current_user.id
 
         if @dog.save
-            redirect_to current_path(current_user.id)
+            redirect_to '/profile'
         else
             redirect_to new_dog_path
             flash[:error] = @dog.errors.full_messages.to_sentence
         end
+    end
+    def index
+        render 'show'
     end
 
     private
     def dog_params
         params.require(:dog).permit(:name, :age, :breed)
     end
+
+
 end
