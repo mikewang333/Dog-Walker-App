@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 <html>
   <head>
     <title>DogWalker</title>
@@ -11,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+    </main>
   </body>
 </html>
